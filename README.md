@@ -1,2 +1,2 @@
-# Hospital_Management
+# Hospital Management
 Fullstack Hospitial Management System
