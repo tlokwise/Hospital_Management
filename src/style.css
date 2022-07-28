@@ -10,7 +10,7 @@ body{
     background-repeat: no-repeat;
 }
 .container {
-    height: 65vh;
+    height: 90vh;
     width: 60vw;
     position: absolute;
     top: 50%;
@@ -49,6 +49,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 10px;
 }
 .login-box {
     height: 500px;
@@ -121,6 +122,7 @@ body{
     border: none;
     border-radius: 5px;
     margin: 10px;
+    padding: 5px;
     cursor: pointer;
 }
 .login-form form a{

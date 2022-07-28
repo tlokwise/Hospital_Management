@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tlokwise Hospital - Login</title>
+        <title>States Hospital - Login</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="/css/all.min.css">
         <script defer src="main.js"></script>
@@ -10,12 +10,12 @@
     <body>
         <div class="container">
             <div class="left-container">
-                <h1>TLOKWISE HOSPITAL</h1>
+                <h1>STATES HOSPITAL</h1>
                 <div class="image-holder">
                     <img src="/images/clay-banks-cEzMOp5FtV4-unsplash.jpg" alt="no image found">
                 </div>
                 <footer>
-                    Copyright @ 2022, Tlokwise Hospital. All rights reserved
+                    Copyright @ 2022, States Hospital. All rights reserved
                 </footer>
             </div>
 
@@ -24,19 +24,18 @@
                     <div class="form-type">
                         <ul>
                             <li>Sign In</li>
-                            <li>Sign Up</li>
                         </ul>
                     </div>
 
                     <div class="login-form">
-                        <form action="">
+                        <form action="login.php" method="POST">
                             <label for="name">Full Name</label><br>
                             <input type="text" name="name" id="name" placeholder="Name Surname" required>
                             <label for="email">Email</label><br>
                             <input type="email" name="email" id="email" placeholder="example@email.com" required>
                             <label for="passcode">Password</label><br>
                             <input type="password" name="passcode" id="passcode" required>
-                            <p id="error-msg"> </p>
+                            <p id="error-msg" name="error-msg"> </p>
                             <button type="submit" id="submit-btn">Sign In</button>
                             <a href="#">I have an account?</a>
                         </form>
