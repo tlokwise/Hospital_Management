@@ -1,54 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>States Hospital - Login</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="/css/all.min.css">
-        <script defer src="main.js"></script>
-    </head>
-
-    <body>
-        <div class="container">
-            <div class="left-container">
-                <h1>STATES HOSPITAL</h1>
-                <div class="image-holder">
-                    <img src="/images/clay-banks-cEzMOp5FtV4-unsplash.jpg" alt="no image found">
-                </div>
-                <footer>
-                    Copyright @ 2022, States Hospital. All rights reserved
-                </footer>
-            </div>
-
-            <div class="right-container">
-                <div class="login-box">
-                    <div class="form-type">
-                        <ul>
-                            <li>Sign In</li>
-                        </ul>
-                    </div>
-
-                    <div class="login-form">
-                        <form action="login.php" method="POST">
-                            <label for="name">Full Name</label><br>
-                            <input type="text" name="name" id="name" placeholder="Name Surname" required>
-                            <label for="email">Email</label><br>
-                            <input type="email" name="email" id="email" placeholder="example@email.com" required>
-                            <label for="passcode">Password</label><br>
-                            <input type="password" name="passcode" id="passcode" required>
-                            <p id="error-msg" name="error-msg"> </p>
-                            <button type="submit" id="submit-btn">Sign In</button>
-                            <a href="#">I have an account?</a>
-                        </form>
-                    </div>
-                </div>
-                <footer>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-pinterest"></i>
-                </footer>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <h1>STATES HOSPITAL</h1>
+            <img src="images/vecteezy_hand-care-with-medical-cross-and-dna-symbol_.jpg" alt="ERROR">
         </div>
-    </body>
+
+        <div class="right-container">
+            <h1>DUMELA!</h1>
+            <form action="process.php" method="POST">
+                <div class="holder">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+
+                <div class="holder">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="holder">
+                    <label for="username">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                
+                <button type="submit" name="submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
