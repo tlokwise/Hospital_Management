@@ -4,8 +4,16 @@
     padding: 0px;
     margin: 0px;
 }
+:root{
+    --purpleblue: #4e1eff;
+    --mygreen: #06c324;
+    --mygrey: #ebebeb;
+    --darkorange: #ff8c00;
+    --myskyblue: #8EECFF;
+}
 body{
-    background-image: linear-gradient(to bottom right, red, yellow);
+    display: flex;
+    background-color: #EBEBEB;
 }
 .container{
     font-family:'Roboto', sans-serif;
@@ -18,6 +26,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 5px 10px 10px;
+    border-radius: 10px;
 
 }
 .left-container{
@@ -27,6 +37,7 @@ body{
     flex-direction: column;
     justify-content: center;
     border: 5px solid #4E1EFF;
+    background-color: white;
     border-radius: 10px 0 0 10px;
 }
 .left-container h1{
@@ -74,7 +85,12 @@ body{
     padding: 10px;
     font-size: 20px;
     outline: none;
-
+    transition: all .2s ease;
+}
+.holder input:focus {
+    outline: 2px solid darkorange;
+    border: none;
+    box-shadow: 0 5px 20px 0px;
 }
 form button{
     height: 40px;
@@ -86,8 +102,58 @@ form button{
     border-radius: 10px;
     cursor: pointer;
     transition: all .3s ease-in;
-    font-size: 18px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 form button:active{
     transform: scale(0.98);
+}
+form hr{
+    height: 2px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+form a#new-account-btn:hover{
+    color: white;
+    background-color: red;
+}
+footer{
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%)
+}
+a#new-account-btn {
+    padding: 10px;
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    color: var(--purpleblue);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all .3s ease-in;
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+/* start of large tablet styles */
+
+}
+    
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+
+}
+    
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+
 }

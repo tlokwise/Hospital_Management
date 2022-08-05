@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --purpleblue: #4e1eff;
+    --mygreen: #06c324;
+    --mygrey: #ebebeb;
+    --darkorange: #ff8c00;
+    --myskyblue: #8EECFF;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+/* start of large tablet styles */
+
+}
+    
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+
+}
+    
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+
+}

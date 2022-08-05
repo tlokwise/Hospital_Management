@@ -1,5 +1,5 @@
 <?php
-include_once "db_inc.php";
+require "db_inc.php";
 $username = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
