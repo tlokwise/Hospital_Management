@@ -1,5 +1,6 @@
 <?php
 require "db_inc.php";
+session_start();
 $username = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -19,7 +20,11 @@ if($conn->connect_error){
     $row = mysqli_fetch_array($result);
 
     if($row['Username'] == $username && $row['Email'] == $email && $row['EmployeePassword'] == $password){
-        header("Location: home.html");
+        $_SESSION["username"] = $row['username'];
+        $_SESSION['name'] = $row['EmployeeName'];
+        $_SESSION['surname'] = $row['EmployeeSurname'];
+        $_SESSION['profession'] = $row['Profession'];
+        header("Location: home.php");
     }
     else {
         header("Location: index.html");
